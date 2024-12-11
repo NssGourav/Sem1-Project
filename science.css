@@ -3,6 +3,7 @@ body {
   font-family: 'Audiowide', sans-serif;
   background-color: black;
   color: white;
+  overflow-x: hidden;
 }
 .Header {
   text-align: center;
@@ -36,25 +37,19 @@ body {
   transform: scale(1.1);
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.7);
 }
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #222;
-  color: white;
-  margin-top: 2rem;
-  border-top: 2px solid white;
-}
+
 .image-scroller {
   display: flex;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  width:100%;
   padding: 1rem;
   gap: 1rem;
-  animation: scroll 30s linear infinite;
+  animation: scroll 25s linear infinite;
 }
 
 @keyframes scroll {
   100% {
-    transform: translateX(-150%);
+    transform: translateX(-350%);
   }
 }
 .fixed{
@@ -71,3 +66,63 @@ footer {
   font-weight:700;
 }
 
+a{
+  color:black;
+}
+a:hover{
+  color:white;
+}
+
+footer {
+  margin-top:30px;
+  color: Black;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;  /* Allow items to wrap when the screen is smaller */
+  justify-content:start;  /* Center the items horizontally */
+  gap: 20px;  /* Add space between the items */
+}
+
+.footer-item {
+  flex: 1 1 150px;  /* Allow each item to grow and shrink, with a minimum width of 150px */
+  
+}
+
+.footer-item a {
+  color: Black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  display:inline-block;
+}
+
+.footer-item a:hover {
+  color: #EBFD40;  /* Change color on hover */
+}
+
+.linkedin:hover{
+  cursor:pointer;
+}
+
+@media (max-width:876px){
+  .foot{
+      margin-left:0px;
+  }
+}
+
+.foot{
+  margin-left:100px
+}
+/* Button styling */
+button {
+  border: 5px solid black;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 25px;
+}
+.notes {
+  font-size: 54px;
+}
