@@ -3,22 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AI Trends - Exploring the Future of Artificial Intelligence</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Modern Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
 
+        /* Card Hover Effects */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
 
+        /* Button Hover Effects */
+        button {
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Video Container Enhancement */
+        .video-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        /* Navigation Bar Enhancement */
+        .fixed {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            border-radius: 50px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Content Container Enhancement */
+        .content-container {
+            margin: 20px;
+            perspective: 1000px;
+        }
+
+        /* Footer Enhancement */
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        .footer-item a {
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .footer-item a:hover {
+            color: #EBFD40;
+        }
+
+        /* Form Enhancement */
+        input[type="email"] {
+            transition: all 0.3s ease;
+        }
+        input[type="email"]:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(235, 253, 64, 0.5);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .grid-container {
+                flex-direction: column;
+            }
+            .content-container {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <div style="height:15px"></div>
     <div class="fixed">
-        <div style="display:flex; align-items: end; justify-content:start;">
-            <a href="index.html" style="display:inline-block; margin-right:0.5rem; font-family: monospace; text-decoration: none;">Home /</a>
-            <a href="Tech.html" style="display:inline-block; margin-right:0.5rem; font-family: monospace; text-decoration: none;">Tech /</a>
-            <a href="THEBIGSTORY.html" style="display:inline-block; margin-right:0.5rem; font-family: monospace; text-decoration: none;">The Big Story /</a>
-            <a href="Science.html" style="display:inline-block; margin-right:-1.5rem; font-family: monospace; text-decoration: none;">Science</a>
+        <div style="display:flex; align-items: center; justify-content:center;">
+            <a href="index.html" style="display:inline-block; margin:0 1rem; font-family: 'Montserrat', sans-serif; text-decoration: none; color: #333; font-weight: 600; transition: color 0.3s ease;">Home</a>
+            <a href="Tech.html" style="display:inline-block; margin:0 1rem; font-family: 'Montserrat', sans-serif; text-decoration: none; color: #333; font-weight: 600; transition: color 0.3s ease;">Tech</a>
+            <a href="THEBIGSTORY.html" style="display:inline-block; margin:0 1rem; font-family: 'Montserrat', sans-serif; text-decoration: none; color: #333; font-weight: 600; transition: color 0.3s ease;">The Big Story</a>
+            <a href="Science.html" style="display:inline-block; margin:0 1rem; font-family: 'Montserrat', sans-serif; text-decoration: none; color: #333; font-weight: 600; transition: color 0.3s ease;">Science</a>
         </div>
     </div>
     <div style="height:30px"></div>
@@ -55,16 +146,18 @@
         </div>
     </grid>
 
-    <div style="background-color: #EBFD40; padding:25px; margin-top:15px;" class="Yellow">
+    <div style="background-color: #EBFD40; padding:25px; margin-top:15px; border-radius: 20px;" class="Yellow">
         <div style="background: #FFFF; padding:10px 20px; border-radius:50px; width:80px; text-align: center; font-family:Arial, Helvetica, sans-serif; font-weight: 600; margin-top:20px">NOTES</div>
         <div style="display:flex; flex-wrap:wrap; align-items: flex-start;">
             <!-- Text Content -->
             <div style="padding:20px; padding-bottom:30px;">
                 <div class="notes" style="margin-top:50px; font-family:'Montserrat';font-weight:700; width:250px">NOTES ON THE AI REVOLUTION</div>
-                <button style=" border-radius: 50px; background-color: black; color: white;  display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;">
-                    <span style="margin-right: 5px;">VIEW MORE</span>
-                    <span style="display: flex; align-items: center; justify-content: center; background-color: white; color: black; width: 25px; height: 25px; border-radius: 50%; font-size: 16px; font-weight: bold; transition: transform 0.2s ease;">→</span>
-                </button>
+                <a href="generative_ai.html">
+                    <button style=" border-radius: 50px; background-color: black; color: white;  display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;">
+                        <span style="margin-right: 5px;">VIEW MORE</span>
+                        <span style="display: flex; align-items: center; justify-content: center; background-color: white; color: black; width: 25px; height: 25px; border-radius: 50%; font-size: 16px; font-weight: bold; transition: transform 0.2s ease;">→</span>
+                    </button>
+                </a>
             </div>
     
             <!-- Vertical Line -->
@@ -84,63 +177,69 @@
         </div>
     </div>
 
-    <div style="display: flex; justify-content: space-evenly; margin-top: 5rem; flex-wrap:wrap">
+    <div style="display: flex; justify-content: space-evenly; margin-top: 5rem; flex-wrap:wrap; gap: 2rem;">
         <!-- First Card -->
         <div class="content-container">
-            <div class="card">
-                <!-- Front Side -->
-                <div class="content-item front">
-                    <img src="GeHamARbsAA_3BJ.jpeg" alt="Generative AI Model" style="width: 100%; height: 100%; background:black;" />
+            <a href="generative_ai.html" style="text-decoration: none;">
+                <div class="card">
+                    <!-- Front Side -->
+                    <div class="content-item front">
+                        <img src="GeHamARbsAA_3BJ.jpeg" alt="Generative AI Model" style="width: 100%; height: 100%; background:black;" />
+                    </div>
+        
+                    <!-- Back Side -->
+                    <div class="content-item back" style="text-align: center; border: 1px solid white; color: white; background: black;">
+                        <h1 style="text-align: center; margin-top: 50%;">Generative AI</h1>
+                        <p style="text-align: center;">
+                            Generative AI refers to algorithms that can create new content, such as text, images, and videos,
+                            by learning patterns from existing data. It powers tools like DALL-E, ChatGPT, and other creative applications.
+                        </p>
+                    </div>
                 </div>
-    
-                <!-- Back Side -->
-                <div class="content-item back" style="text-align: center; border: 1px solid white; color: white; background: black;">
-                    <h1 style="text-align: center; margin-top: 50%;">Generative AI</h1>
-                    <p style="text-align: center;">
-                        Generative AI refers to algorithms that can create new content, such as text, images, and videos,
-                        by learning patterns from existing data. It powers tools like DALL-E, ChatGPT, and other creative applications.
-                    </p>
-                </div>
-            </div>
+            </a>
         </div>
         
         <!-- Second Card -->
         <div class="content-container">
-            <div class="card">
-                <!-- Front Side -->
-                <div class="content-item front">
-                    <img src="f061c13884f2c0c76a89f7e6c508b071.jpg" alt="AI Healthcare" style="width: 100%; height: 100%; background:black;" />
+            <a href="healthcare.html" style="text-decoration: none;">
+                <div class="card">
+                    <!-- Front Side -->
+                    <div class="content-item front">
+                        <img src="f061c13884f2c0c76a89f7e6c508b071.jpg" alt="AI Healthcare" style="width: 100%; height: 100%; background:black;" />
+                    </div>
+        
+                    <!-- Back Side -->
+                    <div class="content-item back" style="text-align: center; border: 1px solid white; color: white; background: black;">
+                        <h1 style="text-align: center; margin-top: 50%;">AI in Health-Care</h1>
+                        <p style="text-align: center;">
+                            Artificial intelligence is revolutionizing healthcare by improving diagnosis, treatment, monitoring, research, and patient outcomes through automation, precision, and personalized care, fostering innovation.
+                        </p>
+                    </div>
                 </div>
-    
-                <!-- Back Side -->
-                <div class="content-item back" style="text-align: center; border: 1px solid white; color: white; background: black;">
-                    <h1 style="text-align: center; margin-top: 50%;">AI in Health-Care</h1>
-                    <p style="text-align: center;">
-                        Artificial intelligence is revolutionizing healthcare by improving diagnosis, treatment, monitoring, research, and patient outcomes through automation, precision, and personalized care, fostering innovation.
-                    </p>
-                </div>
-            </div>
+            </a>
         </div>
         <!-- Third Card -->
         <div class="content-container">
-            <div class="card">
-                <!-- Front Side -->
-                <div class="content-item front">
-                    <img src="ML.jpg" alt="AI & Machine Learning" style="width: 100%; height: 100%; background:black;" />
+            <a href="Tech.html" style="text-decoration: none;">
+                <div class="card">
+                    <!-- Front Side -->
+                    <div class="content-item front">
+                        <img src="ML.jpg" alt="AI & Machine Learning" style="width: 100%; height: 100%; background:black;" />
+                    </div>
+        
+                    <!-- Back Side -->
+                    <div class="content-item back" style="text-align: center; border: 1px solid white; color: white; background: black;">
+                        <h1 style="text-align: center; margin-top: 50%;">AI & Machine Learning</h1>
+                        <p style="text-align: center;">
+                            Artificial intelligence in machine learning enables systems to learn from data, identify patterns, and make decisions without explicit programming.
+                        </p>
+                    </div>
                 </div>
-    
-                <!-- Back Side -->
-                <div class="content-item back" style="text-align: center; border: 1px solid white; color: white; background: black;">
-                    <h1 style="text-align: center; margin-top: 50%;">AI & Machine Learning</h1>
-                    <p style="text-align: center;">
-                        Artificial intelligence in machine learning enables systems to learn from data, identify patterns, and make decisions without explicit programming.
-                    </p>
-                </div>
-            </div>
+            </a>
         </div>
     </div>
       
-    <div style="background-color: #D4CDC5; margin-top:70px;">
+    <div style="background-color: #D4CDC5; margin-top:70px; border-radius: 20px; padding: 20px;">
         <div style="display:flex; flex-wrap:wrap; align-items: flex-start;">
             <!-- Text Content -->
             <div style="padding:20px; padding-bottom:30px;">
@@ -169,12 +268,13 @@
             <div style="padding:20px; width:100%;" class="foot">
                 <div class="notes" style="margin-top:50px; font-family:'Montserrat';font-weight:500; width:250px">The AI Revolution, Redefined</div>
                 <div style="max-width:500px;"><h3 style="font-family:'Lora';">Join us on the journey to explore the future of AI.<br>Sign up for the latest updates</h3></div>
-                <form><label for="Email">
-                    <input type="email" id="Email" style="border-radius: 50px; width:70%; border:none; padding:20px ; max-width:350px;" placeholder="ENTER YOUR EMAIL">
-                </label>
-                <button style=" border-radius: 50px;border:6px solid #EBFD40; background-color: #EBFD40; color: Black;  display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: bold; cursor: pointer; transition: background-color 0.3s ease, transform 0.2s ease;">
-                    <span style="margin-right: 5px;">SUBSCRIBE</span>
-                </button>
+                <form action="form.html" method="post" style="display: flex; gap: 1rem; align-items: center;">
+                    <label for="Email" style="flex-grow: 1;">
+                        <input type="email" id="Email" name="email" style="border-radius: 50px; width:100%; border:none; padding:15px 25px; max-width:350px; font-size: 16px;" placeholder="ENTER YOUR EMAIL" required>
+                    </label>
+                    <button type="submit" style="border-radius: 50px; border:6px solid #EBFD40; background-color: #EBFD40; color: Black; padding: 15px 30px; font-weight: bold; cursor: pointer; transition: all 0.3s ease;">
+                        <span>SUBSCRIBE</span>
+                    </button>
                 </form>
                 <footer>
                     <div class="footer-container">

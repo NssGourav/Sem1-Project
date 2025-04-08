@@ -1,0 +1,20 @@
+{
+  "name": "sem1-project",
+  "version": "1.0.0",
+  "description": "https://nssgourav.github.io/Sem1-Project/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NssGourav/Sem1-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NssGourav/Sem1-Project/issues"
+  },
+  "homepage": "https://github.com/NssGourav/Sem1-Project#readme"
+}
